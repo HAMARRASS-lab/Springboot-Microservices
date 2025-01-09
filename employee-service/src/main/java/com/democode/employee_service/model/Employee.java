@@ -1,4 +1,4 @@
-package com.democode.department_service.model;
+package com.democode.employee_service.model;
 
 public record Employee(Long id, Long departmentId, String name, int age, String position) {
 }

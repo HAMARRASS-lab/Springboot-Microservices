@@ -1,5 +1,7 @@
 package com.democode.department_service.model;
 
+import com.democode.employee_service.model.Employee;
+
 import java.util.ArrayList;
 import java.util.List;
 
