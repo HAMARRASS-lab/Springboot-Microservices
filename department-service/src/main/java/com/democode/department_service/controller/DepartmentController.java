@@ -1,6 +1,7 @@
 package com.democode.department_service.controller;
 
 
+import com.democode.department_service.client.EmployeeClient;
 import com.democode.department_service.model.Department;
 import com.democode.department_service.repository.DepartmentRepository;
 import org.slf4j.Logger;
@@ -20,6 +21,8 @@ public class DepartmentController {
     @Autowired
     private DepartmentRepository repository;
 
+    @Autowired
+    private EmployeeClient employeeClient;
 //    @Autowired
 //    private EmployeeClient employeeClient;
 
