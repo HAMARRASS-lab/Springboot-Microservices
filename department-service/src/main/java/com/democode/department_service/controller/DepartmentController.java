@@ -44,15 +44,15 @@ public class DepartmentController {
         return repository.findById(id);
     }
 
-//    @GetMapping("/with-employees")
-//    public List<Department> findAllWithEmployees() {
-//        LOGGER.info("Department find");
-//        List<Department> departments
-//                = repository.findAll();
-//        departments.forEach(department ->
-//                department.setEmployees(
-//                        employeeClient.findByDepartment(department.getId())));
-//        return  departments;
-//    }
+    @GetMapping("/with-employees")
+    public List<Department> findAllWithEmployees() {
+        LOGGER.info("Department find");
+        List<Department> departments
+                = repository.findAll();
+        departments.forEach(department ->
+                department.setEmployees(
+                        employeeClient.findByDepartment(department.getId())));
+        return  departments;
+    }
 
 }
